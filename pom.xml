@@ -1,0 +1,33 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <name>Maven Default Project</name>
+  <groupId>rpau.smartesting</groupId>
+  <artifactId>smartesting-maven-example</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>rpau.smartesting</groupId>
+      <artifactId>smart-testing</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.20.1</version>
+        <configuration>
+          <properties>
+            <property>
+              <name>listener</name>
+              <value>rpau.smartesting.junit4.SmartTestListener</value>
+            </property>
+          </properties>
+        </configuration>
+      </plugin>
+    </plugins>
+ </build>
+</project>
+
