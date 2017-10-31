@@ -12,5 +12,12 @@
     "classes": [
       "Calculator"
     ]
+  },
+  {
+    "test": "Calculator4Test",
+    "method": "testSum",
+    "classes": [
+      "Calculator"
+    ]
   }
 ]
