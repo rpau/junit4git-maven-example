@@ -5,5 +5,12 @@
     "classes": [
       "Calculator"
     ]
+  },
+  {
+    "test": "BiCalculatorTest",
+    "method": "testSum",
+    "classes": [
+      "Calculator"
+    ]
   }
 ]
