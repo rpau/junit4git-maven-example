@@ -1,0 +1,9 @@
+[
+  {
+    "test": "CalculatorTest",
+    "method": "testSum",
+    "classes": [
+      "Calculator"
+    ]
+  }
+]
