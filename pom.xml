@@ -22,7 +22,7 @@
           <properties>
             <property>
               <name>listener</name>
-              <value>rpau.smartesting.junit4.SmartTestListener</value>
+              <value>org.walkmod.junit4git.junit4.Junit4GitListener</value>
             </property>
           </properties>
         </configuration>
