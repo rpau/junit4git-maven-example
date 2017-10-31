@@ -2,6 +2,11 @@ language: java
 sudo: false
 jdk:
   - oraclejdk8
+before_install:
+  - echo -e "machine github.com\n  login $GITHUB_TOKEN" >> ~/.netrc
+  - git fetch origin refs/notes/tests
+after_install:
+  - git push origin refs/notes/tests
 install:
   - mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
