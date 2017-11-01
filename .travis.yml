@@ -2,6 +2,8 @@ language: java
 sudo: false
 jdk:
   - oraclejdk8
+before_install:
+    - echo -e "machine github.com\n  login $GITHUB_TOKEN" >> ~/.netrc
 after_script:
   - git push origin refs/notes/tests:refs/notes/tests
 install:
