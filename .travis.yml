@@ -4,9 +4,9 @@ jdk:
   - oraclejdk8
 before_install:
   - echo -e "machine github.com\n  login $GITHUB_TOKEN" >> ~/.netrc
-  - git fetch origin refs/notes/tests
+  - git fetch origin refs/notes/tests:refs/notes/tests
 after_script:
-  - git push origin refs/notes/tests
+  - git push origin refs/notes/tests:refs/notes/tests
 install:
   - mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
